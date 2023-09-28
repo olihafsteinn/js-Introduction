@@ -9,13 +9,13 @@ console.log(saveEl)                               // displayes the html tag into
 let count = 0                                     // counter starts at 0
 
 function increment(){                             // Every time the increment button is pressed it adds +1 to the count
-    count += 1
+    count += 1      
     countEl.textContent = count
 }
 
 function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
+    let countStr = count + " - "                   // takes the current value of count and converts it into a string and appends a hyphen and space  
+    saveEl.textContent += countStr                 // += is the same as writing saveEl.textContent = saveEl.textContent + countStr
     countEl.textContent = 0                        // resets the counter back to 0 when save button is pressed
-    count = 0
+    count = 0                                      // sets the value of count to 0
 }
